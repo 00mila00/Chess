@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="styleAnchorPane" prefHeight="434.0" prefWidth="600.0" style="-fx-background-color: #222222;" stylesheets="@../style/menustyl.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StyleController">
+   <children>
+      <ChoiceBox fx:id="figuresChoiceBox" layoutX="39.0" layoutY="136.0" prefHeight="37.0" prefWidth="255.0" />
+      <ChoiceBox fx:id="chessboardChoiceBox" layoutX="39.0" layoutY="239.0" prefHeight="37.0" prefWidth="255.0" stylesheets="@../style/menustyl.css" />
+      <HBox alignment="CENTER" layoutY="-1.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #562837;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ustawienia styli">
+               <font>
+                  <Font name="Times New Roman" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fx:id="figureImage" fitHeight="114.0" fitWidth="103.0" layoutX="379.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="chessImage" fitHeight="136.0" fitWidth="168.0" layoutX="346.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" />
+      <ToggleButton layoutX="39.0" layoutY="368.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="70.0" text="Powrót" />
+      <Text fill="WHITE" layoutX="40.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zmień styl figur">
+         <font>
+            <Font name="Century" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zmień styl planszy">
+         <font>
+            <Font name="Century" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
